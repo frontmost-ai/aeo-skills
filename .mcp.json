@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "frontmost": {
+      "type": "http",
+      "url": "https://app.frontmost.ai/mcp"
+    }
+  }
+}

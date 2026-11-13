@@ -1,0 +1,14 @@
+{
+  "name": "frontmost-ai",
+  "description": "AEO skills for Claude from Frontmost AI.",
+  "owner": {
+    "name": "Frontmost AI"
+  },
+  "plugins": [
+    {
+      "name": "aeo",
+      "source": "./",
+      "description": "AEO (answer engine optimization) skills for Claude. See where AI apps mention your rivals and not you, then run the outreach, the pages, and the site fixes. Reads real AI answer data from Frontmost AI."
+    }
+  ]
+}
