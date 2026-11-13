@@ -18,10 +18,10 @@ claude plugin marketplace add frontmost-ai/aeo-skills
 ```
 
 ```bash
-claude plugin install aeo@frontmost-ai
+claude plugin install frontmost-aeo@frontmost-ai
 ```
 
-Start a new session and type `/aeo:` to list the skills. To run one, type its name, such as `/aeo:ai-readiness`. Claude also picks a skill by itself when your request fits one.
+Start a new session and type `/frontmost-aeo:` to list the skills. To run one, type its name, such as `/frontmost-aeo:ai-readiness`. Claude also picks a skill by itself when your request fits one.
 
 The plugin installs in Claude Code. For other AI apps, see [Other AI apps](#other-ai-apps).
 
@@ -82,7 +82,7 @@ Frontmost AI asks AI apps the questions that your buyers ask, on a schedule. For
 The plugin adds a connector: the link that lets Claude read that data. To sign in:
 
 1. In Claude Code, run `/mcp`.
-2. Choose `plugin:aeo:frontmost`.
+2. Choose `plugin:frontmost-aeo:frontmost`.
 3. Sign in to Frontmost AI in the browser window that opens.
 
 If Frontmost AI is already a connector in your Claude account, the skills use that connector. You do not need to sign in again.
