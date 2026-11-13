@@ -1,6 +1,7 @@
 {
   "name": "frontmost-aeo",
-  "version": "0.1.2",
+  "displayName": "Frontmost AEO",
+  "version": "0.1.3",
   "description": "AEO (answer engine optimization) skills for Claude. See where AI apps mention your rivals and not you, then run the outreach, the pages, and the site fixes. Reads real AI answer data from Frontmost AI.",
   "author": {
     "name": "Frontmost AI",
@@ -18,5 +19,8 @@
     "listicle-outreach",
     "seo"
   ],
-  "privacyPolicyUrl": "https://frontmost.ai/privacy"
+  "privacyPolicyUrl": "https://frontmost.ai/privacy",
+  "documentationUrl": "https://github.com/frontmost-ai/aeo-skills#readme",
+  "supportUrl": "https://github.com/frontmost-ai/aeo-skills/issues",
+  "termsOfServiceUrl": "https://frontmost.ai/terms"
 }
