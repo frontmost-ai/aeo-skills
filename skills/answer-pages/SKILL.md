@@ -1,6 +1,6 @@
 ---
 name: answer-pages
-description: "Plan a page on the business's own site from real AI answers: a page for one buyer question, a fair comparison page, a better version of a page that AI apps already cite, or page ideas from the web searches that ChatGPT ran. Use before you write content for AI search."
+description: "Plan a page on the business's own site from real AI answers: a page for one buyer question, a fair comparison page, a better version of a page that AI apps already cite, or page ideas from the web searches that ChatGPT ran. Use before you write content for AI search. Needs a Frontmost AI project."
 ---
 
 # Answer pages
@@ -13,7 +13,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, ask the person to connect Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available, use the `page-drafting` skill. It needs no account. To plan pages from real AI answers, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Read the answers first

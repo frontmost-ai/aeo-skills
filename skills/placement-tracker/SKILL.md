@@ -1,6 +1,6 @@
 ---
 name: placement-tracker
-description: 'Build and refresh a spreadsheet of the cited pages that do not list the business: outreach status, quote, cost per citing answer, and the answers that name the business after a listing goes live. Use to track listicle outreach.'
+description: 'Build and refresh a spreadsheet of the cited pages that do not list the business: outreach status, quote, cost per citing answer, and the answers that name the business after a listing goes live. Use to track listicle outreach. Needs a Frontmost AI project.'
 ---
 
 # Placement tracker
@@ -13,7 +13,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, ask the person to connect Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available, use the `source-map` skill. It needs no account, and it works from a web search. To read the pages that AI answers cite, with counts, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Build the sheet

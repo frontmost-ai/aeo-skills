@@ -1,6 +1,6 @@
 ---
 name: answer-accuracy
-description: 'Build a spreadsheet of each AI answer that names the business, with the exact words, tone, other businesses named, and cited pages, so that a person can mark what is wrong. Use for "what does ChatGPT say about me" or a wrong description.'
+description: 'Build a spreadsheet of each AI answer that names the business, with the exact words, tone, other businesses named, and cited pages, so that a person can mark what is wrong. Use for "what does ChatGPT say about me" or a wrong description. Needs a Frontmost AI project.'
 ---
 
 # Answer accuracy
@@ -13,7 +13,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, ask the person to connect Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available, use the `mention-check` skill. It needs no account, and it records the facts to check in a small set of answers. To read each recorded answer, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Build the sheet

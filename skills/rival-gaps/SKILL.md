@@ -1,6 +1,6 @@
 ---
 name: rival-gaps
-description: 'Explain why AI apps mention one rival more than the business, and what the business can truthfully match. Use for "why does ChatGPT recommend this rival and not me".'
+description: 'Explain why AI apps mention one rival more than the business, and what the business can truthfully match. Use for "why does ChatGPT recommend this rival and not me". Needs a Frontmost AI project.'
 ---
 
 # Rival gaps
@@ -13,7 +13,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, ask the person to connect Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available, use the `mention-check` skill for a count of the rivals in a small set of answers. It needs no account. To read recorded answers, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Steps

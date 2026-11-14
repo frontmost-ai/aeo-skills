@@ -1,6 +1,6 @@
 ---
 name: question-gaps
-description: 'Rank the buyer questions where AI apps mention rivals and not the business, and give the reason for each loss. Use for "where do I lose in ChatGPT" or "why does AI not mention me".'
+description: 'Rank the buyer questions where AI apps mention rivals and not the business, and give the reason for each loss. Use for "where do I lose in ChatGPT" or "why does AI not mention me". Needs a Frontmost AI project.'
 ---
 
 # Question gaps
@@ -13,7 +13,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, ask the person to connect Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available, use the `mention-check` skill. It needs no account, and it counts a small set of answers by hand. To read recorded answers for each question, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Terms
