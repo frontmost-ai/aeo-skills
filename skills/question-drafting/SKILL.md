@@ -1,6 +1,6 @@
 ---
 name: question-drafting
-description: 'Draft, audit, or expand the buyer questions to track in AI apps (AEO or GEO prompt tracking): branded and unbranded questions, intent clusters, and real buyer phrasing. Use for "which questions should I track in ChatGPT", a review of a question set, or new questions for a Frontmost AI project. Adds questions only after an explicit go-ahead.'
+description: 'Draft, audit, or expand the buyer questions to track in AI apps (AEO or GEO prompt tracking): branded and unbranded questions, intent clusters, and real buyer phrasing. Use for "which questions should I track in ChatGPT", a review of a question set, or new questions for a Frontmost AI project. Adds questions only after an explicit go-ahead. Works from what the person supplies and the web, or from a Frontmost AI project.'
 ---
 
 # Question drafting

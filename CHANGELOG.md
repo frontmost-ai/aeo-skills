@@ -1,8 +1,17 @@
 # Changelog
 
-## 0.2.1
+## 0.2.2 (November 13, 2026)
 
-Fixes from five end-to-end test runs.
+Corrections from a cold read of the repository.
+
+- README: the Install section states that the plugin adds the Frontmost AI connector. Row 2 of the example agrees with the complete result. The line under the first skill table names the skills that read a Frontmost AI project.
+- `examples/mention-check.md`: shows the count that follows the set-up. The rivals and the numbers in the count are invented.
+- `listicle-outreach` and `question-drafting`: the descriptions state that the skill works with no Frontmost AI project.
+- Changelog: 0.2.1 has its date, and one line about 0.2.0 is corrected.
+
+## 0.2.1 (November 13, 2026)
+
+Fixes from five test runs. Each run was one complete skill, from the request to the result.
 
 - `source-map`: a page that nobody opened has the result Not opened. When most pages have a count of 1, open the editorial lists and the directories first.
 - `name-check`: uses saved answers from a Frontmost AI project when the project has them.
@@ -24,7 +33,7 @@ Eight new skills. They need no Frontmost AI account.
 Changed:
 
 - `community-replies` and `ai-search-strategy` work with no account, from a web search or a count by hand.
-- The six skills that need Frontmost AI data say so in their descriptions, and name the skill to use with no account.
+- The six skills that need Frontmost AI data say so in their descriptions. The text of each one names the skill to use with no account.
 
 ## 0.1.0 to 0.1.6 (November 13, 2026)
 

@@ -1,6 +1,6 @@
 ---
 name: listicle-outreach
-description: 'Get a business onto the list articles, reviews, and directories that AI apps cite. Finds the cited pages that list rivals and not the business, checks each page, drafts the pitch and the list entry, handles replies and fee offers, follows up once, and checks the live page. Use for "get me on the listicles that ChatGPT cites", AI listing outreach, publisher outreach, or a reply from a publisher. Drafts by default. Sends and spends only on explicit approval.'
+description: 'Get a business onto the list articles, reviews, and directories that AI apps cite. Finds the cited pages that list rivals and not the business, checks each page, drafts the pitch and the list entry, handles replies and fee offers, follows up once, and checks the live page. Use for "get me on the listicles that ChatGPT cites", AI listing outreach, publisher outreach, or a reply from a publisher. Drafts by default. Sends and spends only on explicit approval. Works from a web search, or from a Frontmost AI project.'
 ---
 
 # Listicle outreach

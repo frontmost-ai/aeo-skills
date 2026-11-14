@@ -5,22 +5,24 @@ A Claude Code plugin with 19 skills for AEO (answer engine optimization): the wo
 Your agent owns your AI search strategy. Claude is the agent, and each skill is a written procedure that it follows for one job. The jobs include a site audit, a page draft, a check of an agency proposal, and outreach to the list articles ("best X tools") that AI apps cite.
 
 - **Free, with Claude alone:** 13 skills. They need no account. Claude needs web access.
-- **With a [Frontmost AI](https://frontmost.ai) account:** the other 6 skills. Frontmost AI is a paid service that records AI answers to your buyers' questions. Plans start at $19 a month.
+- **With a [Frontmost AI](https://frontmost.ai) account:** see who AI picked over you. Frontmost AI collects the answers that ChatGPT gives to your buyers' questions, word for word, and the other 6 skills work from them: which rival won each question, and which pages ChatGPT cited for that answer. Paid, from $19 a month. Larger plans add five more AI apps.
 
 The skills are text files under the MIT license. They run no code.
 
 ## Example
 
-A plumber in Austin gets an agency proposal for $2,400 a month. The prompt is "Check this agency proposal", with the proposal text. `tactic-check` returns one row for each item of the proposal. Four of the eight rows:
+A plumber in Austin gets an agency proposal for $2,400 a month. The prompt is "Check this agency proposal", with the proposal text. `tactic-check` returns one row for each item of the proposal. Four of the eight rows, in fewer words:
 
 | # | Tactic in the proposal | Result | Reason | Do this |
 |---|---|---|---|---|
-| 2 | Guaranteed ChatGPT mentions within 60 days | Unproven | Nobody outside OpenAI controls ChatGPT answers | Ask how the agency measures a mention, and what you get back if the guarantee fails |
+| 2 | Guaranteed ChatGPT mentions in 60 days | Unproven | Nobody outside OpenAI controls ChatGPT answers. No public method is proven to earn a mention | Ask the same plumbing questions many times before and after, and count the mentions |
 | 4 | 25 five-star Google reviews a month from a "reviewer network" | Against a rule and a United States law | The FTC rule on fake reviews, in effect since October 21, 2024. Google forbids content "not based on a real experience" | Ask each customer for an honest review. Give no reward |
 | 7 | Add "Best Plumber Austin" to the Google Business Profile name | Against a rule | Google: "Your name should reflect your business's real-world name" | Keep the real name |
 | 8 | Let the search crawler of ChatGPT read the site | Reasonable | OpenAI: sites that opt out "will not be shown in ChatGPT search answers" | Keep this item. It is a one-time job, not a monthly cost |
 
-The business and the proposal are invented. Each rule above is quoted from its official page. The [complete result](examples/tactic-check.md) has all eight rows, with the links.
+The business and the proposal are invented. Each quote is from the official page of that rule. The [complete result](examples/tactic-check.md) has all eight rows, with the links.
+
+A second example shows a [mention check](examples/mention-check.md): the seven questions, and the form of the count. The numbers in that count are invented.
 
 ## Install
 
@@ -35,6 +37,8 @@ claude plugin install frontmost-aeo@frontmost-ai
 ```
 
 Start a new session and type `/frontmost-aeo:` to list the skills. To run one, type its name, such as `/frontmost-aeo:ai-readiness`. Claude also picks a skill by itself when your request fits one.
+
+The plugin also adds the Frontmost AI connector. It reads no data until you sign in, and the 13 free skills work without it. To copy the skill files alone, with no connector, see [Other AI apps](#other-ai-apps).
 
 For Cursor, Codex, and other AI apps, see [Other AI apps](#other-ai-apps).
 
@@ -78,7 +82,7 @@ What does ChatGPT say about us? Build the sheet so that I can mark what is wrong
 
 | Skill | What you get |
 |---|---|
-| `mention-check` | A count of how often an AI app mentions you: 5 buyer questions and 2 questions about your name, 3 tries each. You ask the questions, or Claude asks through a browser tool that you gave it |
+| `mention-check` | A count of how often an AI app mentions you: 5 buyer questions and 2 questions about your name, 3 tries each. You ask the questions, or Claude asks through a browser tool that you gave it. About 20 minutes for one AI app |
 | `name-check` | Whether AI apps confuse your business with one that has a similar name, and the wording that keeps them apart |
 | `ai-readiness` | Whether AI apps can read your site, and the exact change for each problem |
 | `site-audit` | A complete audit for AI search: access, indexing, the facts that buyers ask about, and pages that can be quoted |
@@ -92,7 +96,7 @@ What does ChatGPT say about us? Build the sheet so that I can mark what is wrong
 | `tactic-check` | Each tactic in an agency proposal or a tool pitch, checked against the platforms' own rules |
 | `ai-search-strategy` | What to fix first, and which repeated jobs to run each week |
 
-With Frontmost AI data, `source-map`, `listicle-outreach`, `community-replies`, and `ai-search-strategy` use recorded AI answers in place of a web search or a count by hand.
+With a Frontmost AI project, `listicle-outreach`, `community-replies`, `question-drafting`, `ai-readiness`, `name-check`, and `ai-search-strategy` read recorded AI answers in place of a web search or a count by hand. `source-map` hands the job to `placement-tracker`.
 
 ### Need Frontmost AI data
 
@@ -115,7 +119,7 @@ Frontmost AI asks AI apps the questions that your buyers ask, on a schedule. For
 
 The plugin adds a connector: the link that lets Claude read that data. To sign in:
 
-1. In Claude Code, run `/mcp`.
+1. In Claude Code, type `/mcp` to list the connectors.
 2. Choose `plugin:frontmost-aeo:frontmost`.
 3. Sign in to Frontmost AI in the browser window that opens.
 
@@ -125,7 +129,7 @@ Every plan includes the connector and starts with a 7-day free trial. See [prici
 
 ## Prompts for a routine
 
-The skills set no schedule. Run these by hand, or put them on the scheduler of your AI app. The weekly prompt and the monthly prompt read Frontmost AI data.
+The skills set no schedule. Run these by hand. If your AI app can run a prompt on a schedule, add them there. The weekly prompt and the monthly prompt read Frontmost AI data.
 
 For outreach, Claude needs a way to read and send your mail, such as a Gmail connector. With none, it gives you the text to send.
 
@@ -137,7 +141,7 @@ Each weekday:
 Read my outreach mailbox. Handle publisher replies with listicle-outreach. Draft the replies and the follow-ups that are due. Send nothing without my approval.
 
 Each month:
-Refresh the placement tracker. Read each page with a date in the Go-Live Date column, and confirm that it still lists us.
+Refresh the placement tracker. Read each page that has a go-live date in the tracker, and confirm that it still lists us.
 ```
 
 ## What our own work taught us
@@ -147,7 +151,7 @@ The skills hold the rules that came from Frontmost AI's own counting and outreac
 From counting answers:
 
 - **One answer is not a count.** The same question returns different businesses on each try.
-- **A name can be another business.** An answer about Front's shared inbox is not about Frontmost AI. `name-check` tests for it.
+- **A name can be another business.** Front is a different company, and it sells a shared inbox. An answer about Front is not about Frontmost AI. `name-check` tests for it.
 - **A link with no name is not a mention.** A name in a criticism does count. See [how we count](https://frontmost.ai/method).
 - **A few pages are behind many answers.** One review site was in 16 of 30 answers to mattress questions. See the [example](https://frontmost.ai/solutions/ecommerce).
 - **The pages change by country.** The most cited sites for one software category differ between the United States and Germany. See the [example](https://frontmost.ai/solutions/product-strategy).
