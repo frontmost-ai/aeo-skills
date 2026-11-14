@@ -83,7 +83,7 @@ Check the listings each quarter, and after each change of address, phone, hours,
 
 - No evidence shows that a directory listing earns an AI mention by itself. Consistent listings keep the facts that AI apps repeat correct. Say so.
 - Use only the facts that the person confirmed.
-- A platform's rules can change. Open the rule page on the day that you quote it.
+- A platform's rules can change. Open the rule page on the day that you quote it. If the page does not load, write "not checked today" next to the rule.
 
 ## Never suggest
 

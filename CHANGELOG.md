@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1
+
+Fixes from five end-to-end test runs.
+
+- `source-map`: a page that nobody opened has the result Not opened. When most pages have a count of 1, open the editorial lists and the directories first.
+- `name-check`: uses saved answers from a Frontmost AI project when the project has them.
+- `directory-listings`: a rule page that does not load is marked "not checked today".
+
 ## 0.2.0 (November 13, 2026)
 
 Eight new skills. They need no Frontmost AI account.

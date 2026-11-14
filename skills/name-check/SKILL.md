@@ -35,7 +35,7 @@ A look-alike on another domain ending in another country is a different business
 ## 2. Test what AI apps say
 
 1. Write four questions that contain the business name: "What is <name>?", "What is <name> and who is it for?", "How much does <name> cost?", and "Is <name> any good?"
-2. Have each question asked three times, each time in a new temporary chat with search on. The person asks them in the AI app. Your own answer in this conversation is not a data point.
+2. Have each question asked three times, each time in a new temporary chat with search on. The person asks them in the AI app. Your own answer in this conversation is not a data point. If a Frontmost AI project holds saved answers to questions that contain the name, use those answers in place of a new round. Say which questions you used.
 3. Copy each complete answer and its list of sources.
 4. Give each answer one result:
 

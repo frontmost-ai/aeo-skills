@@ -48,15 +48,18 @@ Do not edit an encyclopedia article about the person's own business. Wikipedia's
 
 ## 4. Check each page
 
-Open the pages with the highest counts, up to 15. Give each page one result:
+Open the pages with the highest counts, up to 15. When most pages have a count of 1, the count does not order them. Then open the editorial lists and the directories first.
+
+Give each page one result:
 
 | Result | Rule |
 |---|---|
 | Present | The page shows the full name of the business, or links the business's own domain |
 | Not present | You read the complete page, and it has no name and no link of the business |
 | Check needed | The page did not load, loaded in part, or holds fewer than 400 characters of article text. Or only a short name appears, and it can be another business |
+| Not opened | You did not open the page in this run |
 
-- Only Not present supports a pitch. Check needed means that a person opens the page first.
+- Only Not present supports a pitch. Check needed means that a person opens the page first. Not opened means that nobody read the page.
 - A link to a shared site, such as a Reddit, LinkedIn, or YouTube address, does not identify a business.
 - Record the rivals that each page lists.
 - Some sites refuse automated requests. List those pages for the person to open in a browser.
@@ -78,9 +81,9 @@ Never guess a contact address. Never suggest fake reviews, paid links, or keywor
 
 Save a spreadsheet file, `source-map-<date>.csv`, with one row for each page:
 
-Page, Site, Type, Count, Business (Present, Not present, or Check needed), Rivals On Page, How To Get On It, What Decides The Order, Cost, Where To Start, Next Skill.
+Page, Site, Type, Count, Business (Present, Not present, Check needed, or Not opened), Rivals On Page, How To Get On It, What Decides The Order, Cost, Where To Start, Next Skill.
 
-Sort the rows by Count. Put Check needed rows after the others.
+Sort the rows by Count. Put Check needed rows after the others, and Not opened rows last.
 
 ## Rules
 
@@ -94,4 +97,4 @@ Sort the rows by Count. Put Check needed rows after the others.
 1. The source that you used, the market, and the date.
 2. The spreadsheet file. If you cannot make a file, return the table as CSV.
 3. The three pages to work on first, each with its type, its count, and its skill.
-4. The pages that need a check by the person.
+4. The pages that need a check by the person, and the number of pages that you did not open.
