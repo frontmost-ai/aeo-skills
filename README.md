@@ -1,30 +1,22 @@
-# AEO skills for Claude
+# Help your agents get your business recommended by AI
 
-A Claude Code plugin with 19 skills for AEO (answer engine optimization): the work of getting a business mentioned in the answers of ChatGPT and other AI apps.
+AI search marketing skills for solo founders, one-person marketing teams, and agent-run businesses.
 
-Your agent owns your AI search strategy. Claude is the agent, and each skill is a written procedure that it follows for one job. The jobs include a site audit, a page draft, a check of an agency proposal, and outreach to the list articles ("best X tools") that AI apps cite.
+You run the business. Your agents can take on the AI search work.
+These 19 skills give Claude and other coding agents step-by-step instructions to audit your site, draft pages, and prepare outreach.
+The goal: help buyers discover and choose your business in ChatGPT and other AI apps.
+This work is called AEO (answer engine optimization).
 
-Frontmost AI is a headless, agent-first AEO platform for solo founders, agent-run businesses, and one-person marketing teams. Your agents use AI visibility data to run your AI search strategy without a dashboard.
+[Frontmost AI](https://frontmost.ai/headless-ai-visibility) gives your agent the saved AI answers to work from: when you appear, who gets recommended instead, and which pages get cited.
+Your agent uses that data to decide what to work on and compare later results. You decide what goes live.
 
-- **Free, with Claude alone:** 13 skills. They need no account. Claude needs web access.
-- **With a [Frontmost AI](https://frontmost.ai) account:** see who AI picked over you. Frontmost AI collects the answers that ChatGPT gives to your buyers' questions, word for word, and the other 6 skills work from them: which rival won each question, and which pages ChatGPT cited for that answer. Paid, from $19 a month. Larger plans add five more AI apps.
+- **Without a Frontmost AI account:** 13 skills for site audits, page drafts, outreach, and more. Your agent needs web access.
+- **With Frontmost AI data:** 6 more skills to review changes, compare rivals, plan pages, and track cited sites that leave you out.
+
+Frontmost AI is a headless AI visibility platform. Your agent can work through the connector, API, or command line.
+The web app is there when you want to look.
 
 The skills are text files under the MIT license. They run no code.
-
-## Example
-
-A plumber in Austin gets an agency proposal for $2,400 a month. The prompt is "Check this agency proposal", with the proposal text. `tactic-check` returns one row for each item of the proposal. Four of the eight rows, in fewer words:
-
-| # | Tactic in the proposal | Result | Reason | Do this |
-|---|---|---|---|---|
-| 2 | Guaranteed ChatGPT mentions in 60 days | Unproven | Nobody outside OpenAI controls ChatGPT answers. No public method is proven to earn a mention | Ask the same plumbing questions many times before and after, and count the mentions |
-| 4 | 25 five-star Google reviews a month from a "reviewer network" | Against a rule and a United States law | The FTC rule on fake reviews, in effect since October 21, 2024. Google forbids content "not based on a real experience" | Ask each customer for an honest review. Give no reward |
-| 7 | Add "Best Plumber Austin" to the Google Business Profile name | Against a rule | Google: "Your name should reflect your business's real-world name" | Keep the real name |
-| 8 | Let the search crawler of ChatGPT read the site | Reasonable | OpenAI: sites that opt out "will not be shown in ChatGPT search answers" | Keep this item. It is a one-time job, not a monthly cost |
-
-The business and the proposal are invented. Each quote is from the official page of that rule. The [complete result](examples/tactic-check.md) has all eight rows, with the links.
-
-A second example shows a [mention check](examples/mention-check.md): the seven questions, and the form of the count. The numbers in that count are invented.
 
 ## Install
 
@@ -145,6 +137,21 @@ Read my outreach mailbox. Handle publisher replies with listicle-outreach. Draft
 Each month:
 Refresh the placement tracker. Read each page that has a go-live date in the tracker, and confirm that it still lists us.
 ```
+
+## Example
+
+A plumber in Austin gets an agency proposal for $2,400 a month. The prompt is "Check this agency proposal", with the proposal text. `tactic-check` returns one row for each item of the proposal. Four of the eight rows, in fewer words:
+
+| # | Tactic in the proposal | Result | Reason | Do this |
+|---|---|---|---|---|
+| 2 | Guaranteed ChatGPT mentions in 60 days | Unproven | Nobody outside OpenAI controls ChatGPT answers. No public method is proven to earn a mention | Ask the same plumbing questions many times before and after, and count the mentions |
+| 4 | 25 five-star Google reviews a month from a "reviewer network" | Against a rule and a United States law | The FTC rule on fake reviews, in effect since October 21, 2024. Google forbids content "not based on a real experience" | Ask each customer for an honest review. Give no reward |
+| 7 | Add "Best Plumber Austin" to the Google Business Profile name | Against a rule | Google: "Your name should reflect your business's real-world name" | Keep the real name |
+| 8 | Let the search crawler of ChatGPT read the site | Reasonable | OpenAI: sites that opt out "will not be shown in ChatGPT search answers" | Keep this item. It is a one-time job, not a monthly cost |
+
+The business and the proposal are invented. Each quote is from the official page of that rule. The [complete result](examples/tactic-check.md) has all eight rows, with the links.
+
+A second example shows a [mention check](examples/mention-check.md): the seven questions, and the form of the count. The numbers in that count are invented.
 
 ## What our own work taught us
 
