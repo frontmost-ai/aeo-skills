@@ -4,6 +4,8 @@ A Claude Code plugin with 19 skills for AEO (answer engine optimization): the wo
 
 Your agent owns your AI search strategy. Claude is the agent, and each skill is a written procedure that it follows for one job. The jobs include a site audit, a page draft, a check of an agency proposal, and outreach to the list articles ("best X tools") that AI apps cite.
 
+Frontmost AI is a headless, agent-first AEO platform for solo founders, agent-run businesses, and one-person marketing teams. Your agents use AI visibility data to run your AI search strategy without a dashboard.
+
 - **Free, with Claude alone:** 13 skills. They need no account. Claude needs web access.
 - **With a [Frontmost AI](https://frontmost.ai) account:** see who AI picked over you. Frontmost AI collects the answers that ChatGPT gives to your buyers' questions, word for word, and the other 6 skills work from them: which rival won each question, and which pages ChatGPT cited for that answer. Paid, from $19 a month. Larger plans add five more AI apps.
 
