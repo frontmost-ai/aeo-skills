@@ -122,7 +122,12 @@ Each skill is a folder with a `SKILL.md` file in the open [Agent Skills](https:/
 
 ## Privacy
 
-The plugin holds text files only. It runs no code of its own. The skills tell Claude to read web pages with the tools that you gave it. For outreach, they also tell it to read your mailbox. The Frontmost AI connector sends your requests to Frontmost AI under its [privacy policy](https://frontmost.ai/privacy).
+The plugin holds text files only. It runs no code of its own. The skills tell Claude to use the tools that you gave it. This is where your data can go:
+
+- **Web pages.** Claude reads public pages, such as your robots.txt file and a publisher's article.
+- **Your mailbox.** For outreach, Claude reads the publisher threads. It sends a message from your mailbox, or through a publisher's form, only after you approve that exact message.
+- **Your files.** The tracker spreadsheets stay in your own files. A tracker can hold a publisher's name and published contact address.
+- **Frontmost AI.** The connector sends your requests to Frontmost AI under its [privacy policy](https://frontmost.ai/privacy). Frontmost AI keeps your project data while your account is open.
 
 ## License
 
