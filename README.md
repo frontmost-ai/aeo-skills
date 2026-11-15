@@ -121,6 +121,8 @@ If Frontmost AI is already a connector in your Claude account, the skills use th
 
 Every plan includes the connector and starts with a 7-day free trial. See [pricing](https://frontmost.ai/pricing).
 
+To read the same data from your own code, use the [API](https://app.frontmost.ai/docs/api), the [command line](https://github.com/frontmost-ai/cli), or the [SDKs for TypeScript, Python, and Rust](https://github.com/frontmost-ai/sdks).
+
 ## Prompts for a routine
 
 The skills set no schedule. Run these by hand. If your AI app can run a prompt on a schedule, add them there. The weekly prompt and the monthly prompt read Frontmost AI data.

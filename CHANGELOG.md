@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 (November 14, 2026)
+
+- README: Connect Frontmost AI links the API, the command line, and the new SDKs for TypeScript, Python, and Rust.
+
 ## 0.2.2 (November 13, 2026)
 
 Corrections from a cold read of the repository.
