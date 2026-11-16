@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1 (November 16, 2026)
+
+- `autopilot`: the CLI steps check the error codes that the CLI returns. `invalid_key` or `key_revoked` asks the person to run `frontmost login`. `needs_plan` or `plan_no_api` says that Autopilot needs a paid plan.
+- Needs Frontmost AI CLI 0.7.1 or later, which returns `invalid_key` when a saved sign-in ends.
+
 ## 0.4.0 (November 16, 2026)
 
 `autopilot` and `scan-review` run on the Frontmost AI CLI when the connector is not available.
