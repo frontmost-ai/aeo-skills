@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 (November 16, 2026)
+
+- `rival-gaps`: the Head to head step is removed. Frontmost AI retired that view, so the result never has it.
+
 ## 0.4.0 (November 16, 2026)
 
 `autopilot` and `scan-review` run on the Frontmost AI CLI when the connector is not available.

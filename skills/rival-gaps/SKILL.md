@@ -21,10 +21,9 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 1. Call `get_rivals` for the project and the scan in the request. The default order puts the most mentioned rival first.
 2. Pick the first rival unless the person names one. Call `get_rivals` again with its `rival_id`.
 3. Read the rival's page: the business and the rival on AI Visibility, Win Rate, Position, and Sentiment, with the gap, for each AI app and each topic.
-4. If the result has Head to head, read it. It holds what AI apps say when a buyer compares the two, with quotes. If it is empty, continue.
-5. Read the answers that mention the rival. Copy the `answers_filter` into `get_answers`. Read at least 10 answers, or all of them when there are fewer.
-6. Count the points that the answers repeat about the rival. A point counts once for each answer. Report "in 7 of 12 answers read", not "often".
-7. Sort each repeated point into one of three groups:
+4. Read the answers that mention the rival. Copy the `answers_filter` into `get_answers`. Read at least 10 answers, or all of them when there are fewer.
+5. Count the points that the answers repeat about the rival. A point counts once for each answer. Report "in 7 of 12 answers read", not "often".
+6. Sort each repeated point into one of three groups:
    - **You can match it now**: the same thing is true for the business, and the answers do not say it. The fix is to state the fact clearly on the business's own site and on the outside pages that AI apps cite.
    - **You can match it with work**: it is not true today. Say what must change. Do not write copy that claims it.
    - **Do not chase it**: it does not fit the business, or it is the rival's main strength.
