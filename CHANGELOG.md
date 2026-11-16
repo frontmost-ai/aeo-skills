@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3 (November 16, 2026)
+
+- `rival-gaps`: the Head to head step is removed. Frontmost AI retired that view, so the result never has it.
+
 ## 0.4.2 (November 16, 2026)
 
 - `scan-review`: with the CLI, `needs_plan` or `plan_no_api` stops the review as `plan_required` does, and `invalid_key` or `key_revoked` asks the person to run `frontmost login`.
