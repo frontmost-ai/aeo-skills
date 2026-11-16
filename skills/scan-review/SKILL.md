@@ -13,7 +13,8 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 
 - If a tool returns `setup_required`, give the person the `url` from the result. Stop until they say that set-up is done.
 - If a tool returns `plan_required`, say that this data needs a paid Frontmost AI plan, and stop.
-- If the Frontmost AI tools are not available, repeat the `mention-check` skill each month and compare the counts. It needs no account. To read scheduled scans, the person connects Frontmost AI: https://frontmost.ai/connect
+- If the Frontmost AI tools are not available and the Frontmost AI CLI is signed in (`frontmost whoami --json` works), use the CLI. `get_scan` is `frontmost scans get --json`. `get_answers` is `frontmost scans answers --json`, with each field of the `answers_filter` as a flag, such as `--page-url`. The autopilot skill's `references/cli.md` lists every command.
+- If neither is available, repeat the `mention-check` skill each month and compare the counts. It needs no account. To read scheduled scans, the person connects Frontmost AI: https://frontmost.ai/connect
 - Never invent the data, and never fill a gap with a guess.
 
 ## Steps
