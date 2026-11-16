@@ -3,7 +3,7 @@
 AI search marketing skills for solo founders, one-person marketing teams, and agent-run businesses.
 
 You run the business. Your agents can take on the AI search work.
-These 19 skills give Claude and other coding agents step-by-step instructions to audit your site, draft pages, and prepare outreach.
+These 20 skills give Claude and other coding agents step-by-step instructions to audit your site, draft pages, and prepare outreach.
 The goal: help buyers discover and choose your business in ChatGPT and other AI apps.
 This work is called AEO (answer engine optimization).
 
@@ -70,6 +70,22 @@ Build the tracker of the cited pages that leave us out.
 What does ChatGPT say about us? Build the sheet so that I can mark what is wrong.
 ```
 
+## Autopilot
+
+`autopilot` runs your AI search strategy without a prompt each time. It needs a Frontmost AI project.
+
+```text
+/frontmost-aeo:autopilot
+```
+
+1. Set-up reads your project and your repository, asks for the facts that it cannot find, and writes a charter: your business facts and your limits.
+2. A schedule wakes Autopilot after each scan. A run with nothing new ends at once.
+3. Each run reads the new scan and opens a job only where the data shows its evidence: a site fix, an answer page, search-term coverage, a listing pitch.
+4. Your limits set the pace. No calendar does. Later scans show what moved after each job, and Autopilot puts more work into the job types with more upward reads.
+5. A log in your repository, `frontmost-autopilot/log.md`, puts first what waits for you.
+
+Autopilot starts in Assist: each change is a pull request or a draft. Full-send lets Autopilot merge its own site fixes and pages, and it starts only when you ask for it. In both modes, a message to another person, a change that uses credits, and a deletion need your approval.
+
 ## Skills
 
 ### Work with Claude alone
@@ -104,8 +120,9 @@ A scan is one round of your questions, asked to each AI app.
 | `answer-pages` | A plan for a page on your site, built from real AI answers |
 | `answer-accuracy` | A spreadsheet of each AI answer that mentions you, for you to mark what is wrong |
 | `placement-tracker` | A spreadsheet of the cited pages that do not list you: the rivals on each page, the outreach status, and the answers that mention you after a listing goes live |
+| `autopilot` | The work above, run after each scan inside your limits, with a log of what was done and what waits for you |
 
-Every skill drafts by default. Claude sends a message, adds a tracked question, or changes your project only after you approve that exact action. Claude never pays or accepts a fee, and it never creates an account or accepts terms for you. Those decisions are yours.
+Every skill drafts by default. The one exception is `autopilot` in Full-send, which merges its own site changes after you turn that mode on. Claude sends a message, adds a tracked question, or changes your project only after you approve that exact action. Claude never pays or accepts a fee, and it never creates an account or accepts terms for you. Those decisions are yours.
 
 ## Connect Frontmost AI
 
@@ -125,7 +142,7 @@ To read the same data from your own code, use the [API](https://app.frontmost.ai
 
 ## Prompts for a routine
 
-The skills set no schedule. Run these by hand. If your AI app can run a prompt on a schedule, add them there. The weekly prompt and the monthly prompt read Frontmost AI data.
+Only `autopilot` sets a schedule, and it asks first. The other skills set none. Run these by hand. If your AI app can run a prompt on a schedule, add them there. The weekly prompt and the monthly prompt read Frontmost AI data.
 
 For outreach, Claude needs a way to read and send your mail, such as a Gmail connector. With none, it gives you the text to send.
 

@@ -21,7 +21,7 @@ This skill reads a Frontmost AI project through the Frontmost AI tools that this
 1. Call `get_rivals` for the project and the scan in the request. The default order puts the most mentioned rival first.
 2. Pick the first rival unless the person names one. Call `get_rivals` again with its `rival_id`.
 3. Read the rival's page: the business and the rival on AI Visibility, Win Rate, Position, and Sentiment, with the gap, for each AI app and each topic.
-4. Read Head to head. It holds what AI apps say when a buyer compares the two, with quotes.
+4. If the result has Head to head, read it. It holds what AI apps say when a buyer compares the two, with quotes. If it is empty, continue.
 5. Read the answers that mention the rival. Copy the `answers_filter` into `get_answers`. Read at least 10 answers, or all of them when there are fewer.
 6. Count the points that the answers repeat about the rival. A point counts once for each answer. Report "in 7 of 12 answers read", not "often".
 7. Sort each repeated point into one of three groups:

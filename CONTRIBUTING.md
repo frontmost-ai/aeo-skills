@@ -13,7 +13,7 @@ A skill is one folder in `skills/` with a `SKILL.md` file. It is a written proce
 3. **No promise.** Nobody outside an AI company controls its answers. Say what the evidence supports.
 4. **A platform rule has its source.** Link the platform's own page, and give the date when you read it. A blog post is not a source for a rule.
 5. **No real business data.** Use invented examples. Do not add a real person's name, address, or price offer.
-6. **Drafts by default.** A skill sends, posts, pays, or changes an account only after the person approves that exact action.
+6. **Drafts by default.** A skill sends, posts, pays, or changes an account only after the person approves that exact action. `autopilot` in Full-send merges its own site changes, and only after the person turns that mode on.
 7. **Plain words.** Short sentences. Define a term the first time.
 
 ## Before you open a pull request

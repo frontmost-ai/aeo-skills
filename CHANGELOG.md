@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 (November 15, 2026)
+
+One new skill, `autopilot`. It needs a Frontmost AI project.
+
+- `autopilot`: runs the AI search strategy without a prompt each time. Set-up writes a charter with the business facts and the limits, and schedules a run after each scan. Each run opens a job only where the data shows its evidence. The limits set the pace, and no calendar does. Assist is the default. Full-send starts only when the person asks.
+- `ai-search-strategy`: the head-to-head system is removed.
+- `rival-gaps`: Head to head is read only when the result has it.
+- README and CONTRIBUTING: `autopilot` is the one skill that sets a schedule, and Full-send is the one exception to drafts by default.
+
 ## 0.2.3 (November 14, 2026)
 
 - README: Connect Frontmost AI links the API, the command line, and the new SDKs for TypeScript, Python, and Rust.

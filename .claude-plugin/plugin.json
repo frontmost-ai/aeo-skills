@@ -1,8 +1,8 @@
 {
   "name": "frontmost-aeo",
   "displayName": "Frontmost AEO",
-  "version": "0.2.3",
-  "description": "AEO (answer engine optimization) skills for Claude. Check what AI apps say about your business, audit your site, and find the pages behind the answers. Then run the outreach, the pages, and the listings. 13 of the 19 skills need no account. The other 6 read recorded AI answers from Frontmost AI.",
+  "version": "0.3.0",
+  "description": "AEO (answer engine optimization) skills for Claude. Check what AI apps say about your business, audit your site, and find the pages behind the answers. Then run the outreach, the pages, and the listings. The autopilot skill runs the work after each scan, inside limits that you set. 13 of the 20 skills need no account. The other 7 read recorded AI answers from Frontmost AI.",
   "author": {
     "name": "Frontmost AI",
     "url": "https://frontmost.ai"
@@ -15,6 +15,7 @@
     "geo",
     "ai-search",
     "ai-visibility",
+    "autopilot",
     "chatgpt",
     "listicle-outreach",
     "seo",
