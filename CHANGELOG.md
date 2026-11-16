@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.2 (November 16, 2026)
+
+- `scan-review`: with the CLI, `needs_plan` or `plan_no_api` stops the review as `plan_required` does, and `invalid_key` or `key_revoked` asks the person to run `frontmost login`.
+
 ## 0.4.1 (November 16, 2026)
 
 - `autopilot`: the CLI steps check the error codes that the CLI returns. `invalid_key` or `key_revoked` asks the person to run `frontmost login`. `needs_plan` or `plan_no_api` says that Autopilot needs a paid plan.
