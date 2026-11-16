@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 (November 16, 2026)
+
+`autopilot` and `scan-review` run on the Frontmost AI CLI when the connector is not available.
+
+- `autopilot`: a new file, `references/cli.md`, names the CLI command for each tool that Autopilot calls, and how to install and sign in. Set-up and each run use it when the connector is not available, for example in a scheduled run in a terminal.
+- `scan-review`: reads the scan and its answers with the CLI when the connector is not available.
+- Needs Frontmost AI CLI 0.7.0 or later.
+
 ## 0.3.0 (November 15, 2026)
 
 One new skill, `autopilot`. It needs a Frontmost AI project.

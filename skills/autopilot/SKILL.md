@@ -1,6 +1,6 @@
 ---
 name: autopilot
-description: 'Run the AI search strategy for a business without a prompt each time. Set-up asks a few questions, writes a charter, and schedules itself. Each later run reads the newest Frontmost AI scan, decides which work the data calls for (site fixes, answer pages, search-term coverage, listing pitches, question upkeep), does it within the limits that the person set, and reports. Use for "/autopilot", "put my AEO on autopilot", "run my AI search strategy for me", "autopilot status", "pause autopilot", or a scheduled Autopilot run. Needs a Frontmost AI project.'
+description: 'Run the AI search strategy for a business without a prompt each time. Set-up asks a few questions, writes a charter, and schedules itself. Each later run reads the newest Frontmost AI scan, decides which work the data calls for (site fixes, answer pages, search-term coverage, listing pitches, question upkeep), does it within the limits that the person set, and reports. Use for "/autopilot", "put my AEO on autopilot", "run my AI search strategy for me", "autopilot status", "pause autopilot", or a scheduled Autopilot run. Needs a Frontmost AI project, through the connector or the CLI.'
 ---
 
 # Autopilot
@@ -53,7 +53,7 @@ Never pay, accept a fee, create an account, or accept terms.
 
 ## Set-up
 
-1. Call `list_projects`. If two Frontmost AI connectors are present, use the one from this plugin. Both read the same data. If a tool returns `setup_required`, give the person the `url` from the result, and stop. If it returns `plan_required`, say that Autopilot needs a paid Frontmost AI plan, and stop. If the Frontmost AI tools are not available, say that Autopilot needs a Frontmost AI project, give https://frontmost.ai/connect, and stop. With no project, the `ai-search-strategy` skill works by hand.
+1. Call `list_projects`. If two Frontmost AI connectors are present, use the one from this plugin. Both read the same data. If a tool returns `setup_required`, give the person the `url` from the result, and stop. If it returns `plan_required`, say that Autopilot needs a paid Frontmost AI plan, and stop. If the Frontmost AI tools are not available, use the Frontmost AI CLI. Follow [references/cli.md](references/cli.md). It names the command for each tool in this skill. If the CLI is not set up either, give the install commands from that file, and stop. With no project, the `ai-search-strategy` skill works by hand.
 2. Pick the project. With one project, use it. With more, ask which one.
 3. Read `run_config` of the project. If `cadence` is `off`, no scan will arrive, so Autopilot has nothing to read. Say so. Offer to turn scans on with `update_project`, and state the credits that `cost.monthly_max` gives. Change it only after a yes.
 4. Read the repository. Find the site: the folder with the public pages, the framework, and how a page goes live. Record the address of the live site, and whether this repository publishes it. If you find no site, say that Autopilot will write draft files only.
@@ -69,7 +69,7 @@ Never pay, accept a fee, create an account, or accept terms.
 
 ## A run
 
-A run can start with nobody there. Do not ask a question during a run. When a step is blocked, write the blocker in `log.md`, and continue with the steps that do not depend on it.
+A run can start with nobody there. Do not ask a question during a run. If the Frontmost AI tools are not available in the run, use the CLI commands in [references/cli.md](references/cli.md). When a step is blocked, write the blocker in `log.md`, and continue with the steps that do not depend on it.
 
 ### 1. Read the state
 
