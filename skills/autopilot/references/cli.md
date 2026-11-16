@@ -12,8 +12,8 @@ Use the CLI when the Frontmost AI connector is not available, for example in a s
    frontmost login
    ```
 
-3. If it says "Not signed in" or returns `unauthorized`, give the person `frontmost login`, and stop. A scheduled run can use an API key in the `FRONTMOST_API_KEY` environment variable instead.
-4. If it returns `plan_required`, say that Autopilot needs a paid Frontmost AI plan, and stop.
+3. If it says "Not signed in" or returns `invalid_key` or `key_revoked`, give the person `frontmost login`, and stop. A scheduled run can use an API key in the `FRONTMOST_API_KEY` environment variable instead.
+4. If it returns `needs_plan` or `plan_no_api`, say that Autopilot needs a paid Frontmost AI plan, and stop.
 
 Add `--json` to every command, and read the fields that the steps name. Add `--project <project-id>` when the workspace has more than one project. A scan command with no scan ID reads the newest delivered scan.
 
