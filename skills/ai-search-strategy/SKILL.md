@@ -1,6 +1,6 @@
 ---
 name: ai-search-strategy
-description: 'Own the AI search strategy for a business: read where AI apps mention it and where they mention rivals, fix what is broken, and run a small set of repeated systems (listing outreach, answer pages, search-term coverage, head-to-head upkeep). Use for "what should I do about AI search", "run my AEO this week", a weekly AI search review, or a first plan for a new project. Start here when no other skill fits. Works from a count by hand, or from a Frontmost AI project.'
+description: 'Own the AI search strategy for a business: read where AI apps mention it and where they mention rivals, fix what is broken, and run a small set of repeated systems (listing outreach, answer pages, search-term coverage). Use for "what should I do about AI search", "run my AEO this week", a weekly AI search review, or a first plan for a new project. Start here when no other skill fits. Works from a count by hand, or from a Frontmost AI project.'
 ---
 
 # AI search strategy
@@ -22,7 +22,7 @@ One action rarely changes what AI apps say. Repeated work does. So this skill fi
   - Read "AI Visibility" as the `mention-check` score.
   - Listing outreach: the evidence is a `source-map` row with the result Not present.
   - Answer pages: the evidence is a question group with no Mentioned result. Use `page-drafting`.
-  - Skip search-term coverage and head-to-head upkeep. Both need recorded answers.
+  - Skip search-term coverage. It needs recorded answers.
 
   Say that the count is a small sample, and pick one system at most until a second count agrees. Step 4 uses the next `mention-check` in place of a scan.
 
@@ -54,7 +54,6 @@ Pick a system only where the data shows its evidence. Most businesses run one or
 | Listing outreach | A cited page lists rivals and not the business | Pitch the most cited such page | Each week | `listicle-outreach`, `placement-tracker`, `source-map` |
 | Answer pages | A question or topic where answers name rivals and not the business | Publish or extend one page that answers it | Every two weeks | `question-gaps`, `answer-pages`, `page-drafting` |
 | Search-term coverage | A web search that ChatGPT ran (`get_queries`), where the answers do not name the business | Add that subject to a page that exists | Each month | `answer-pages` |
-| Head-to-head upkeep | A claim in a comparison answer that the site can rebut, or a rival that moved | Answer the claim on the comparison page | After each rival move | `rival-gaps` |
 
 For each system that you pick, state:
 
@@ -78,7 +77,7 @@ Reddit threads are a separate job. Use the `community-replies` skill. Directorie
 - Never say that a system works, and never promise a result. Say what the data supports, and what you will read to find out.
 - Keep done, sent, published, and mentioned as separate facts.
 - Do not send, publish, or spend without the person's approval. Each skill states what needs it.
-- This skill sets no schedule. To repeat the review, the person runs a prompt on their own schedule.
+- This skill sets no schedule. To repeat the review, the person runs a prompt on their own schedule, or uses the `autopilot` skill.
 - If the data is thin, such as a first scan, say so. Give the fixes and one system at most.
 
 ## Output
